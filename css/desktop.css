@@ -21,3 +21,8 @@
 .mobile-menu {
   display: none;
 }
+
+main {
+  flex-direction: row;
+  align-items: center;
+}

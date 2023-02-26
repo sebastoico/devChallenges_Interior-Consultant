@@ -11,6 +11,15 @@ html {
   background-color: #181719;
   color: white;
 }
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-width: 375px;
+  z-index: 1;
+}
 
 header {
   position: relative;
@@ -53,6 +62,7 @@ header {
   justify-content: center;
 
   background-color: #181719;
+  z-index: 2;
 }
 .mobile-menu ul {
   display: flex;
@@ -82,4 +92,100 @@ header .menu--active a {
 }
 .mobile-menu--inactive {
   display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8vh;
+  padding: 2.4vh 3.2vw;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2vh;
+}
+.description h2 {
+  font-family: "Lora";
+  font-size: clamp(3.6rem, 9.6vw, 4.8rem);
+  font-weight: 500;
+  line-height: clamp(4.6rem, 12.3vw, 6.1rem);
+}
+.description p {
+  font-size: clamp(1.4rem, 3.7vw, 2.4rem);
+  font-weight: 400;
+  line-height: clamp(1.7rem, 4.5vw, 2.9rem);
+  width: 65%;
+}
+.description a {
+  font-size: clamp(1.4rem, 3.7vw, 1.8rem);
+  font-weight: 700;
+  line-height: clamp(1.7rem, 4.5vw, 2.2rem);
+  text-decoration: none;
+  color: white;
+}
+
+.figure {
+  position: relative;
+  max-width: 737px;
+}
+.figure__background {
+  width: 100%;
+}
+.figure__designer {
+  position: absolute;
+  right: 3%;
+  top: 85%;
+  width: 85%;
+  max-width: 410px;
+
+  background-color: #181719;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 14px 19px;
+}
+.figure__designer > p {
+  font-family: "Lora";
+  font-size: clamp(1.8rem, 4.8vw, 2.4rem);
+  font-weight: 700;
+  line-height: clamp(2.3rem, 6.1vw, 3.1rem);
+  width: 75%;
+}
+.designer__title {
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.designer__title img {
+  width: clamp(37px, 10vw, 50px);
+  border-radius: 50%;
+}
+.designer__title h3 {
+  font-size: clamp(1.2rem, 3.2vw, 1.4rem);
+  font-weight: 500;
+  line-height: clamp(1.5rem, 4vw, 1.7rem);
+}
+.designer__title p {
+  margin-top: 6px;
+  font-size: clamp(1rem, 2.6vw, 1.2rem);
+  font-weight: 500;
+  line-height: clamp(1.2rem, 3.2vw, 1.5rem);
+  color: #828282;
+}
+
+footer {
+  margin-top: 60px;
+  text-align: center;
+  padding: 24px;
+}
+footer p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.7rem;
+  color: #a9a9a9;
+}
+footer a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #a9a9a9;
 }
