@@ -1,0 +1,23 @@
+.header__nav--mobile {
+  display: none;
+}
+.header__nav--desktop {
+  display: block;
+}
+.header__nav--desktop ul {
+  display: flex;
+  gap: 6vw;
+
+  font-style: normal;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+  list-style: none;
+}
+.header__nav--desktop a {
+  text-decoration: none;
+  color: white;
+}
+.mobile-menu {
+  display: none;
+}
